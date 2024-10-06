@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Callbacks</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        // Functions Sequence
+        function fun1() {
+            display("hello");
+        }
+        function fun2() {
+            display("world");
+        }
+        function display(some) {
+            document.getElementById("demo").innerHTML=some;
+        }
+        fun1();
+        fun2();
+        function calc(a,b,callback) {
+            callback(a+b);
+        }
+        calc(10,9,display);
+        const arr1=[-9,1,90,-45,-100,1000];
+        const arr2=removeNeg(arr1,(x)=> x>=0);
+        function removeNeg(nums,callback) {
+            const posNums=[];
+            for(const x of nums) {
+                if(callback(x)) {
+                    posNums.push(x);
+                }
+            }
+            return posNums;
+        }
+        console.log(arr2);
+        display(arr2);
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Asynchronous</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <h1 id="heading-1"></h1>
+    <script>
+        // setTimeout()
+        // setTimeout(display,3000);
+        // function display() {
+        //     document.getElementById("demo").innerHTML="Hello";
+        //     console.log("Hello");
+        // }
+        // setTimeout(function display() {
+        //     document.getElementById("demo").innerHTML="World";
+        //     console.log("World");
+        // },3000);
+        // setInterval(function greet() {
+        //     console.log("Hi");
+        // },10000);
+        setInterval(date,1000);
+        function date() {
+            let d=new Date();
+            document.getElementById("heading-1").innerHTML=d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
+        }
+    </script>
+</body>
+</html>

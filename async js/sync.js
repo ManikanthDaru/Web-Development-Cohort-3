@@ -1,8 +1,10 @@
 // asynchronous -> not happening or done at the same time or speed
 const a = require('fs'); // fs->external library file system
 
-const contents = a.readFileSync("a.txt", "utf-8");
-console.log(contents);
+const contents1 = a.readFileSync("abc.txt", "utf-8");
+console.log(contents1);
+const contents2 = a.readFileSync("b.txt", "utf-8");
+console.log(contents2);
 
 function sum(a, b) {
     return (parseInt(a) + parseInt(b));
