@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callbacks</title>
+</head>
+<body>
+    <p id="temp"></p>
+    <script>
+        // callback
+        function greet() {
+            document.getElementById("temp").innerHTML="Hello World!";
+        }
+        setTimeout(greet,3000); // callback based approach
+    </script>
+</body>
+</html>
