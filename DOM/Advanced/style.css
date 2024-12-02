@@ -1,0 +1,40 @@
+body {
+    background-color: pink;
+}
+
+h1 {
+    color: purple;
+}
+
+h4 {
+    color:darkcyan
+}
+
+.flex {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.flex button {
+    width: 7rem;
+    height: 2rem;
+    background-color: red;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.flex #add-btn {
+    background-color: green;
+
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.75;
+}
+#text-input {
+    width: 10rem;
+    height: 1.8rem;
+    border-radius: 5px;
+}
